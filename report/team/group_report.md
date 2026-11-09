@@ -329,6 +329,8 @@ TỔNG: 110 phút/lần xuất bản, theo ước lượng.
 
 ### 4.2. Quy trình tương lai
 
+**Ước lượng quy trình tương lai (chưa thử nghiệm):** 30 phút chuẩn bị + 15 phút duyệt + 30 phút Rule/nền tảng xử lý + 10 phút kiểm tra = **85 phút/lượt**, giảm **25 phút** so với baseline **110 phút/lượt** (khoảng **22,7%**). Áp dụng khi cả ba kênh được hỗ trợ, không có sự cố hoặc đăng lại; đây là **target giả định**, không phải hiệu quả đã đạt.
+
 **Phương án:** Template dùng chung + Rule hỗ trợ phân phối và theo dõi trạng thái. Creator tự viết và điều chỉnh nội dung; quy trình này không có bước AI tạo hoặc tối ưu caption/hashtag. Khả năng kết nối, đăng/hẹn giờ và các trường được hỗ trợ trên từng nền tảng phải được kiểm tra trước khi triển khai.
 
 ```text
@@ -343,10 +345,10 @@ QUAY VỀ: Kết nối lỗi hoặc trường không được hỗ trợ → cre
 
 | Bước | Phân công | Input | Công việc và Output | Thời gian / tần suất |
 |---:|---|---|---|---|
-| 1 | Con người | Video hoàn chỉnh, kiến thức trong video, template | Creator chuẩn bị tiêu đề, caption, hashtag, cover và lịch đăng riêng từng nền tảng trong một nơi → bộ dữ liệu đăng tập trung | Chưa ước lượng lại; thực hiện mỗi lần xuất bản. Không dùng thời gian của phương án AI cũ. |
-| 2 | Con người — bước kiểm tra bắt buộc | Bộ dữ liệu từng nền tảng | Kiểm tra nội dung kiến thức, đúng file video, thông tin, cover và lịch đăng; sửa rồi duyệt riêng → các phiên bản được phép gửi | Chưa đo; gồm cả thời gian sửa trước khi duyệt. |
-| 3 | Rule | Phiên bản đã duyệt, cấu hình nền tảng và kết nối hợp lệ | Kiểm tra trường bắt buộc theo cấu hình đã xác minh; gửi đăng/hẹn giờ; lưu mã bài và trạng thái từng nền tảng → kết quả thành công, thất bại hoặc đang xử lý | Chưa đo; phải tách thời gian điều phối khỏi thời gian chờ tải/xử lý. |
-| 4 | Con người — bước kiểm tra sau gửi | Bài đăng, lịch đăng, trạng thái và thông báo lỗi | Kiểm tra nội dung/hiển thị, đối chiếu bản đã duyệt; xử lý kênh lỗi → xác nhận hoàn tất hoặc danh sách việc cần làm thủ công | Chưa đo; thời gian xử lý ngoại lệ ghi riêng. |
+| 1 | Con người | Video hoàn chỉnh, kiến thức trong video, template | Creator chuẩn bị tiêu đề, caption, hashtag, cover và lịch đăng riêng từng nền tảng trong một nơi → bộ dữ liệu đăng tập trung | **~30 phút** (ước lượng) chuẩn bị metadata tại một nơi; chưa đo. |
+| 2 | Con người — bước kiểm tra bắt buộc | Bộ dữ liệu từng nền tảng | Kiểm tra nội dung kiến thức, đúng file video, thông tin, cover và lịch đăng; sửa rồi duyệt riêng → các phiên bản được phép gửi | **~15 phút** (ước lượng) rà soát và duyệt từng nền tảng; chưa đo. |
+| 3 | Rule | Phiên bản đã duyệt, cấu hình nền tảng và kết nối hợp lệ | Kiểm tra trường bắt buộc theo cấu hình đã xác minh; gửi đăng/hẹn giờ; lưu mã bài và trạng thái từng nền tảng → kết quả thành công, thất bại hoặc đang xử lý | **~30 phút** (ước lượng) gồm gửi bằng Rule và chờ các nền tảng tải/xử lý; chưa kiểm thử API. |
+| 4 | Con người — bước kiểm tra sau gửi | Bài đăng, lịch đăng, trạng thái và thông báo lỗi | Kiểm tra nội dung/hiển thị, đối chiếu bản đã duyệt; xử lý kênh lỗi → xác nhận hoàn tất hoặc danh sách việc cần làm thủ công | **~10 phút** (ước lượng) kiểm tra trạng thái ba kênh khi không có ngoại lệ; lỗi phát sinh tính riêng. |
 
 **Boundary:**
 
@@ -370,14 +372,16 @@ QUAY VỀ: Kết nối lỗi hoặc trường không được hỗ trợ → cre
 | Chỉ số | Trước — ước lượng | Sau — kỳ vọng, chưa đo | Ghi chú |
 |---|---|---|---|
 | Số bước chính | 5 | 4 | Gom thao tác phân phối ba kênh vào bước Rule, bổ sung điểm duyệt rõ ràng. |
-| Tổng thời gian | Khoảng 110 phút/lần | Chưa ước lượng lại sau khi bỏ bước AI | Phải tính cả creator tự soạn nội dung, duyệt, hệ thống gửi/xử lý và kiểm tra; chưa có cơ sở chốt dưới 25 phút. |
-| Thời gian con người trực tiếp thao tác | Chưa tách khỏi thời gian chờ trong 110 phút | Chưa đo | Đo riêng để tránh nhầm giảm công thao tác với giảm thời gian tải video. |
+| Tổng thời gian | **~110 phút/lượt** (ước lượng) | **≤85 phút/lượt** (target giả định, giảm ~22,7%) | Cùng phạm vi: video đã hoàn thiện → xác nhận trạng thái đăng/hẹn giờ trên YouTube Shorts, TikTok và Instagram Reels; không tính xuất video hoặc chờ đến giờ công khai. |
+| Thời gian con người trực tiếp thao tác | Chưa tách khỏi thời gian chờ trong 110 phút | **~55 phút/lượt** (ước lượng: 30 + 15 + 10) | Không tính ~30 phút Rule/nền tảng xử lý; phải đo riêng thao tác chủ động và thời gian chờ trước khi kết luận mức giảm thực tế. |
 | Số bước cần thao tác thủ công | 5/5 | 3/4 khi kết nối đáp ứng yêu cầu | Creator vẫn chuẩn bị nội dung, duyệt và kiểm tra; khi kết nối lỗi phát sinh thêm thao tác thủ công. |
 | Bottleneck chính | Nghi ngờ bước điều chỉnh/đăng TikTok và Instagram; chưa xác định phần chiếm nhiều thời gian nhất | Có thể còn ở soạn/duyệt nội dung hoặc chờ nền tảng xử lý | Bỏ AI nên phần sáng tạo và thích ứng nội dung vẫn do creator làm. |
 | Rủi ro mới phát sinh | Creator thao tác trực tiếp từng kênh; vẫn có thể nhập nhầm | Gửi sai phiên bản, sai lịch, đăng trùng khi thử lại, kết nối hết hiệu lực hoặc chỉ thành công một phần | Kiểm soát bằng duyệt riêng từng kênh, lưu phiên bản/trạng thái và kiểm tra trước khi thử lại. |
 | Phương án quay về | Creator đăng thủ công | Creator dùng bộ nội dung đã duyệt để đăng/cấu hình thủ công riêng kênh lỗi | Không yêu cầu làm lại các kênh đã thành công. |
 
 **Cách đo tiếp theo:** Với mỗi lần xuất bản, ghi giờ bắt đầu/kết thúc cùng phạm vi; ghi riêng thời gian chuẩn bị nội dung, duyệt, cấu hình, chờ tải/xử lý, kiểm tra và sửa lỗi. Ghi số kênh thành công, số lần đăng trùng/sai lịch và số lần phải quay về thủ công. Đối chiếu các video có mức độ chỉnh sửa tương tự trước khi kết luận tiết kiệm thời gian. Nếu có hẹn giờ, ghi thời gian chờ đến lịch công khai riêng, không dùng để so sánh công thao tác.
+
+**Success Metric được chốt ở mức mục tiêu ước lượng:** **110 → ≤85 phút/lượt đăng ba kênh**, tương đương tiết kiệm ít nhất **25 phút (~22,7%)**. Phép so sánh áp dụng cùng video, cùng ba nền tảng được hỗ trợ và không tính bước xuất video. Khi pilot, bấm giờ tối thiểu **5 lượt** mỗi phương án, báo cáo **thời gian trung bình**, tách công người thao tác, thời gian chờ hệ thống và số trường hợp phát sinh lỗi. Nếu không có đủ quyền đăng tự động hoặc phải dùng fallback, đánh dấu riêng thay vì coi là đã đạt target.
 
 ---
 
@@ -391,7 +395,7 @@ QUAY VỀ: Kết nối lỗi hoặc trường không được hỗ trợ → cre
 | **Quy trình** | Khi video đã hoàn chỉnh: soạn bộ thông tin đăng → truy cập và cấu hình lần lượt YouTube, TikTok, Instagram → điều chỉnh caption, hashtag hoặc cover theo kênh → kiểm tra trạng thái đăng và hiển thị. |
 | **Bottleneck** | Thao tác cấu hình và điều chỉnh nội dung lặp lại ở các giao diện khác nhau; vùng TikTok/Instagram đang bị nghi ngờ là nơi tốn nhiều thời gian, nhưng **chưa tách được thời gian chỉnh nội dung, thao tác giao diện và chờ upload**. |
 | **Impact** | Tốn công thao tác, có khả năng đăng thiếu kênh, sai caption, sai lịch hoặc phải kiểm tra thủ công nhiều nơi. Mức độ và tần suất chưa được kiểm chứng qua phỏng vấn hoặc log đo. |
-| **Success Metric** (baseline → target, cách đo) | **Baseline tạm tính:** khoảng 110 phút/lần đăng ba nền tảng, chỉ là ước lượng từ quy trình ở mục 4 (không tính 10 phút xuất video). **Target cần xác lập sau đo thực tế**, ưu tiên giảm thời gian thao tác thủ công mà không tăng sai nội dung hoặc đăng nhầm/trùng. **Cách đo:** bấm giờ từng bước trên nhiều lượt đăng, tách thời gian chờ tải/xử lý và kiểm tra lỗi trên từng kênh. |
+| **Success Metric** (baseline → target, cách đo) | **Baseline ước lượng: 110 phút/lượt** khi đăng cùng một video lên YouTube Shorts, TikTok và Instagram Reels (sau khi có video hoàn chỉnh, không tính 10 phút xuất video). **Target giả định: ≤85 phút/lượt**, tiết kiệm ≥25 phút (**~22,7%**). **Cách đo:** bấm giờ từ lúc bắt đầu chuẩn bị metadata đến khi xác nhận trạng thái đăng/hẹn giờ của cả ba kênh; thực hiện ít nhất 5 lượt có độ phức tạp tương đương cho quy trình thủ công và thử nghiệm Rule; tách thời gian con người thao tác, thời gian tải/xử lý và lỗi. Các con số **chưa được đo thực tế**. |
 | **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | Đây là mô tả vấn đề trước khi lựa chọn giải pháp. Với mọi phương án có tự động hóa: người dùng phải duyệt file, caption, nền tảng, tài khoản và lịch trước khi gửi; không được tự xuất bản bản chưa duyệt, tự sửa nội dung hoặc bỏ qua giới hạn API và quyền riêng tư; cần người kiểm tra kết quả và xử lý ngoại lệ. |
 
 **Các phản biện được nhóm đưa vào phạm vi phân tích (tổng hợp từ bản của Đạt và Công Minh):**
@@ -480,11 +484,13 @@ Do không sử dụng AI, hai loại lỗi này được xem xét dưới góc �
 
 | Trường | Nội dung |
 |---|---|
+**Mục tiêu thời gian được chốt theo ước lượng (chưa đo):** từ **110 phút/lượt** xuống **≤85 phút/lượt** đăng cùng một video lên ba nền tảng, tiết kiệm **≥25 phút (~22,7%)**. Đây là target để kiểm chứng, không phải kết quả thực nghiệm.
+
 | **Actor** | Người sáng tạo nội dung, nhân viên marketing hoặc người quản lý nhiều tài khoản mạng xã hội. |
 | **Quy trình** | Người dùng chuẩn bị ảnh/video và caption, sau đó truy cập từng nền tảng để tải nội dung, nhập thông tin, thiết lập tùy chọn và đăng bài. |
 | **Bottleneck** | Phải thực hiện lặp lại các thao tác đăng cùng một nội dung trên nhiều nền tảng, gây mất thời gian và dễ sai sót. |
 | **Impact** | Giảm hiệu suất làm việc, tăng thời gian quản lý nội dung, dễ đăng thiếu, đăng sai hoặc khó theo dõi trạng thái bài đăng. |
-| **Success Metric** (baseline → target, cách đo) | **Baseline tạm tính:** khoảng 110 phút/lần đăng ba nền tảng, chỉ là ước lượng từ quy trình ở mục 4 (không tính 10 phút xuất video). **Target cần xác lập sau đo thực tế**, ưu tiên giảm thời gian thao tác thủ công mà không tăng sai nội dung hoặc đăng nhầm/trùng. **Cách đo:** bấm giờ từng bước trên nhiều lượt đăng, tách thời gian chờ tải/xử lý và kiểm tra lỗi trên từng kênh. |
+| **Success Metric** (baseline → target, cách đo) | **Baseline ước lượng: 110 phút/lượt** đăng một video lên ba nền tảng; **target giả định: ≤85 phút/lượt** (giảm ít nhất 25 phút, **~22,7%**), tính trong cùng phạm vi CP5, không gồm xuất video/chờ tới lịch công khai. **Đo:** trung bình ít nhất 5 lượt thử cùng độ phức tạp, từ chuẩn bị metadata đến xác nhận trạng thái cả ba kênh; ghi riêng thao tác, chờ tải/xử lý và các lượt fallback. **Điều kiện chất lượng đề xuất:** ≥95% tác vụ đăng hợp lệ thành công, ≥98% bài đăng đúng nội dung/tài khoản/kênh, không có đăng trùng ngoài ý muốn. Tất cả đều là **mục tiêu chưa kiểm chứng**, không phải kết quả đo. |
 | **Boundary** | Chỉ hỗ trợ nền tảng, loại tài khoản và định dạng có API cùng quyền đăng bài hợp lệ. Không tự tạo nội dung, không tự quyết định đăng bài, không vượt qua giới hạn của nền tảng. Người dùng phải xác nhận trước khi đăng. |
 | **AI intervention point** | Không có điểm can thiệp AI. Công cụ tự động hóa các bước đăng tải sau khi người dùng chọn nội dung và nền tảng đích. |
 | **Mức chọn** | **Rule — không sử dụng AI.** |
@@ -497,7 +503,7 @@ Do không sử dụng AI, hai loại lỗi này được xem xét dưới góc �
 | Actor | Người sáng tạo video ngắn quản lý nhiều kênh. | Tập trung vào creator / người quản lý nội dung nhiều nền tảng. | Giữ phạm vi phù hợp với người trực tiếp thao tác. |
 | Quy trình | Ghi nhận các thao tác tải và cấu hình lặp lại. | Chỉ ra bước người dùng duyệt, Rule gửi, kiểm tra và xử lý lỗi. | Xác định nơi có thể tự động hóa mà không đổi nội dung. |
 | Bottleneck | Nghi ngờ phần cấu hình TikTok/Instagram và thao tác lặp. | Tiếp tục coi là giả thuyết, cần đo phần thao tác so với chờ tải. | Không kết luận sai rằng toàn bộ 50 phút đều được tự động hóa. |
-| Success Metric | Baseline ước lượng 110 phút/lần, chưa đo. | Baseline vẫn **110 phút/lần (ước lượng, cùng phạm vi)**; target giảm thời gian thao tác sẽ chốt sau đo thực tế, theo dõi tỉ lệ đăng đúng, trùng và thành công. | Tránh đổi baseline sang 15 phút không cùng quy trình; chưa có bằng chứng để cam kết 5 phút. |
+| Success Metric | Baseline **110 phút/lượt** và target **≤85 phút/lượt** đều là ước lượng cùng phạm vi; đo tổng thời gian từ video hoàn chỉnh tới khi có trạng thái ba nền tảng. | Giữ **110 → ≤85 phút/lượt** nhưng cụ thể hóa phép thử ≥5 lượt, tách thời gian thao tác/chờ và thêm ngưỡng đăng thành công ≥95%, chính xác ≥98%, không đăng trùng. | Từ v0 sang v1, tăng khả năng kiểm thử và bổ sung điều kiện chất lượng để tránh chỉ chạy theo tốc độ. |
 | Boundary | Người dùng phải duyệt và không được tự xuất bản bản chưa duyệt. | Quy định thêm quyền API, nền tảng/loại tài khoản được hỗ trợ, duyệt riêng từng kênh, xử lý trạng thái không rõ. | Giảm nguy cơ vượt quyền, đăng sai và trùng. |
 | Mức can thiệp | Chưa chốt ở v0. | **Rule, không AI**; AI intervention point: **không có**. | Quy trình có thể xác định trước, không cần mô hình tự quyết. |
 
@@ -510,7 +516,7 @@ Các ngưỡng dưới đây là mục tiêu thử nghiệm giả định.
 
 | # | Tiêu chí | Đạt khi | Không đạt khi |
 |---:|---|---|---|
-| 1 | Thời gian thao tác đăng bài | Giảm ít nhất 20% thời gian con người thao tác so với baseline **đo được** ở cùng phạm vi (mục tiêu pilot đề xuất). | Không đạt ngưỡng cải thiện hoặc không có dữ liệu đo tin cậy. |
+| 1 | Tổng thời gian đăng video lên 3 nền tảng | Thời gian **trung bình của ít nhất 5 lượt** theo Rule **≤85 phút/lượt**, cùng phạm vi và độ phức tạp so với baseline ước lượng 110 phút; chỉ tính kênh được API hỗ trợ, không có ngoại lệ. | Trung bình **>85 phút/lượt** hoặc không có dữ liệu bấm giờ/các nền tảng không đủ điều kiện thử. |
 | 2 | Tỷ lệ đăng thành công | ≥ 95% tác vụ đăng hợp lệ được nền tảng xác nhận thành công. | Tỷ lệ thành công dưới 95%. |
 | 3 | Độ chính xác nội dung | ≥ 98% bài đăng đúng file, caption, tài khoản và nền tảng đã chọn. | Tỷ lệ chính xác dưới 98% hoặc phát sinh lỗi đăng nhầm nghiêm trọng. |
 | 4 | Khả năng sử dụng | ≥ 90% người dùng thử nghiệm hoàn thành quy trình mà không cần hỗ trợ. | Dưới 90% người dùng hoàn thành độc lập. |
