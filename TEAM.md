@@ -12,7 +12,7 @@
 
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
-| 1 | | | | |
+| 1 | Võ Công Minh | 2A202603520 | | |
 | 2 | | | | |
 | 3 | | | | |
 | 4 | | | | |
@@ -37,7 +37,7 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 
 Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `HoVaTen-MSSV`.
 
-### HoVaTen-MSSV
+### VoCongMinh-2A202603520
 
 **Phần việc phụ trách:**
 
