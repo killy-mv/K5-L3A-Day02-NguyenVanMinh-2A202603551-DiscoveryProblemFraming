@@ -5,7 +5,7 @@
 
 ## 1. Thông tin nhóm
 
-- Tên nhóm: **[Chưa được cung cấp — cần nhóm điền]**
+- Tên nhóm: **Lab2Dev**
 - Thành viên: xem `TEAM.md`
 - Candidate problem nhóm chọn (1 câu): Giảm thao tác lặp lại và sai sót khi đăng cùng một video lên nhiều nền tảng mạng xã hội.
 - Quyết định cuối: No-Go

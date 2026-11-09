@@ -9,7 +9,7 @@
 - Họ tên: Võ Công Minh
 - MSSV: 2A202603520
 - Email trường (không bắt buộc, repo có thể để public):
-- Tên nhóm:
+- Tên nhóm: Lab2Dev
 - Link repo nhóm:
 
 ---
@@ -165,49 +165,61 @@ Các phản biện dưới đây do AI đưa ra khi soạn nháp; tôi chưa xá
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Chuẩn bị Problem Card | Cung cấp trải nghiệm, chọn ba vấn đề và ưu tiên ý tưởng ghi chép chi tiêu. | Có ba card nháp; chưa ghi nhận buổi pitch. |
+| Phản biện bài của bạn khác | Chưa bổ sung. | Chưa bổ sung. |
+| Nhận phản biện | Làm rõ phạm vi đo và xác nhận số liệu đăng video là ước lượng. | Baseline còn 110 phút; bottleneck cần đo thêm. |
+| Gom cluster / cây OST | Chưa bổ sung. | Chưa bổ sung. |
+| Chọn candidate problem | Đưa bài toán đăng video đa nền tảng vào phân tích CP5. | Chưa ghi nhận kết quả chấm chọn của nhóm. |
+| Kiểm chứng / research | Ghi nhận người làm nội dung khác gặp khó khăn tương tự. | Cần bổ sung nguồn và cách kiểm tra. |
+| Quy trình nhóm | Cung cấp card, chỉnh phạm vi và chọn phương án con người + Rule. | Hoàn thiện bản nháp CP5 i), ii), iii). |
+| Problem Statement | Chưa bổ sung. | Chưa chốt v0/v1. |
+| Mức tự động hóa | Giữ creator tự viết, duyệt; Rule hỗ trợ đăng. | Có boundary và phương án đăng thủ công. |
+| Quyết định | Chưa chốt. | Cần đánh giá bốn rủi ro. |
 
 ---
 
-## 5. Dùng AI
+## 5. Dùng công cụ hỗ trợ
 
-| Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
+| Checkpoint | Mục đích | Hữu ích | Hạn chế | Tôi điều chỉnh |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP1 | Gợi mở vấn đề, diễn đạt Job Story. | Làm rõ nhu cầu và dấu hiệu thực tế. | Gợi ý còn rộng. | Chọn ý đúng trải nghiệm, cung cấp thời gian ước lượng. |
+| CP2 | Gợi ý shortlist và khung card. | Tổ chức quy trình, bottleneck và metric. | Chưa khớp ưu tiên; nhiều phần chưa đo. | Thay ý gom bài bằng chi tiêu; giữ target ở mức đề xuất. |
+| CP4 | Chưa bổ sung. | — | Thiếu nguồn kiểm chứng. | Cần ghi nguồn và cách kiểm tra. |
+| CP5 | Đặt câu hỏi phản biện, hỗ trợ dựng bảng và sơ đồ. | Làm rõ phạm vi trước/sau. | Bản đầu có bước tạo nội dung không cần thiết. | Bỏ bước đó; giữ con người + Rule; chưa chốt thời gian sau. |
+| CP5–6 Problem Statement | Chưa bổ sung. | — | Chưa có v0/v1. | — |
+| CP6 | Phân biệt soạn nội dung với tự động đăng. | Làm rõ quyền duyệt của creator. | Chưa kiểm tra tích hợp. | Chưa chốt quyết định cuối. |
 
 ---
 
 ## 6. Reflection (CP7)
 
-Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
-
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+
+Tôi học được cách nhìn vấn đề từ nhiều góc độ, thay vì chỉ dựa vào trải nghiệm của mình. Một ý tưởng đáng chọn cần làm rõ ai gặp khó khăn, bước nào gây tốn thời gian và có bằng chứng gì. Tôi cũng thấy cần hiểu quy trình hiện tại trước khi nghĩ đến công cụ hay giải pháp.
 
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
 
+Ban đầu tôi nghĩ đến quét camera để ghi chi tiêu, còn bài toán video hướng đến đăng đồng thời lên ba nền tảng. Khi phân tích, tôi chuyển trọng tâm sang nhu cầu gốc: giảm nhập tay và giảm thao tác phân phối lặp lại. Trong quy trình đăng video, tôi chọn giữ creator tự viết và duyệt nội dung, dùng Rule hỗ trợ đăng thay vì tự động hóa mọi việc.
+
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+
+Có. Ban đầu card dùng tổng 120 phút, gồm cả xuất video. Sau khi làm rõ phạm vi, tôi đồng ý bắt đầu đo khi video đã hoàn chỉnh, nên baseline tương ứng còn 110 phút. Tôi cũng chưa giữ mục tiêu dưới 25 phút vì chưa tách thời gian chỉnh nội dung, thao tác và chờ tải.
 
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
 
+Kết quả nhìn chung phù hợp với khó khăn tôi đang phân tích. Theo mục 3 của báo cáo nhóm, hai trong ba người được phỏng vấn gặp khó khăn khi phân phối đa kênh, còn người chỉ đăng TikTok không có nhu cầu tương tự. Điều này giúp thu hẹp actor thay vì làm cho mọi creator. Phần research cũng cho thấy đã có công cụ hỗ trợ, nên cần xác định khoảng trống cụ thể trước khi nghĩ đến tự xây.
+
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
+
+Khó nhất là thống nhất phạm vi và metric giữa các phần báo cáo. Con số 120 phút có tính xuất video, còn 110 phút chỉ tính khâu phân phối. Ngoài ra, 50 phút ở TikTok và Instagram chưa được tách thành từng loại thao tác, nên chưa đủ cơ sở coi toàn bộ là bottleneck chỉnh caption.
 
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 
+Tôi sẽ đo một lần đăng thực tế, tách thời gian thao tác khỏi thời gian chờ và thống nhất baseline trước. Tôi sẽ hỏi kỹ liệu template và Rule đã đủ chưa, công cụ hiện có thiếu gì, và cách tránh đăng trùng khi một nền tảng lỗi. Các bản báo cáo cũng cần thống nhất quy trình trước khi chốt mục tiêu tiết kiệm thời gian.
+
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+
+Bài toán là creator giáo dục phải lặp lại thao tác chuẩn bị và đăng video trên ba nền tảng. Kết quả kiểm chứng trong báo cáo nhóm giúp giới hạn đối tượng vào creator có nhu cầu phân phối đa kênh. Quy trình hiện tại ở phạm vi video đã hoàn chỉnh có năm bước, mất khoảng 110 phút theo ước lượng. Metric cần đo gồm tổng thời gian, công thao tác và lỗi đăng trong cùng phạm vi. Boundary là creator phải duyệt riêng nội dung và lịch đăng từng kênh trước khi hệ thống gửi. Phương án tôi chọn ở CP5 dùng template và Rule, giữ con người viết, duyệt và kiểm tra; kết nối lỗi thì quay về đăng thủ công. Quyết định triển khai cần dựa trên kiểm tra kết nối, đo thử và đánh giá bốn rủi ro, thay vì chỉ dựa vào số bước giảm.
 
 ---
 
