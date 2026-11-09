@@ -153,54 +153,82 @@ Sơ đồ quy trình hiện tại (thời gian **chưa được đo**):
 ---
 ## 4. Tôi đã tham gia phần nào (CP3 → CP7)
 
+> **Nhật ký đóng góp đối chiếu từ repo và các yêu cầu tôi đã trực tiếp đưa ra.** Những nơi cần xác nhận việc phát biểu trực tiếp trong buổi họp hoặc thay đổi ý kiến thực tế được để rõ, không gán cho bản thân các hoạt động chưa có bằng chứng.
+
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Trình bày Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom nhóm vấn đề / cây OST | | |
-| Chọn vấn đề ứng viên | | |
-| Kiểm chứng / nghiên cứu | | |
-| Quy trình nhóm | | |
-| Phát biểu vấn đề (Problem Statement) | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| **Trình bày Problem Card (CP3)** | Chuẩn bị 3 candidate cá nhân: (1) tìm lỗi responsive KillyTech, (2) đối chiếu nhiều tài liệu hướng dẫn lab, (3) xử lý lỗi quyền ClickHouse trong WSL. Đưa 3 ý này vào bảng pitch nhóm ở mục 2.1. | Nhóm có đủ danh sách 12 candidate từ 4 thành viên để so sánh; các ý của tôi được xếp vào cluster tài liệu và debug phần mềm. **Cần tự xác nhận câu nào đã trực tiếp trình bày ở buổi họp.** |
+| **Phản biện bài của bạn khác (CP3)** | Câu hỏi tôi đã cung cấp về candidate đăng video: **“Tại sao không dùng AI để làm cho nhanh, tại sao lại dùng tools và code?”** Câu trả lời được ghi trong nhóm: **“Dùng tools vì độ chính xác cao và hoàn toàn có thể tự làm được, không cần AI.”** | Làm rõ khả năng giải quyết bài toán đăng video bằng tool/code thông thường, thay vì mặc định chọn AI. Các câu hỏi #2–#12 ở báo cáo nhóm được AI đề xuất sau đó nên **không tính là phản biện thật nếu chưa diễn ra**. |
+| **Nhận phản biện (CP3)** | Trong bảng pitch có các câu gợi ý từ Võ Công Minh về ba candidate của tôi: có chắc tìm CSS là bước nghẽn, có thật cần AI để đối chiếu rubric, và có nên cho AI tự sửa quyền ClickHouse. **Chưa có đủ bằng chứng các câu hỏi này thực sự được nêu trong cuộc họp.** | Các Problem Card đã thể hiện hướng giải thích thận trọng hơn: bottleneck là giả thuyết, cần đo thời gian, và ưu tiên checklist/Rule trước. **Để đạt yêu cầu phản biện thật, tôi cần thay bằng câu hỏi mình thực sự nhận và thay đổi do mình quyết định.** |
+| **Gom nhóm vấn đề / cây OST (CP3)** | Tổng hợp 12 candidate thành 4 cluster: sản xuất video, quản lý công việc, đọc tài liệu, chẩn đoán lỗi kỹ thuật; bổ sung ảnh ghi chú trao đổi vào báo cáo; thiết kế OST xoay quanh pain khi đăng cùng video lên nhiều nền tảng. | Phân biệt rõ *opportunity* (thao tác lặp, sai cấu hình, khó kiểm tra trạng thái) với *solution* (AI, script hoặc agent). |
+| **Chọn vấn đề ứng viên (CP3)** | Tổng hợp bảng so sánh 3 candidate #1 (đăng video), #2 (tìm tư liệu dựng video), #5 (tra cứu README) và lập luận ưu tiên candidate #1. Bảng điểm là **đánh giá đề xuất**, chưa được xác minh là điểm nhóm đã bỏ phiếu. | Chốt chủ đề để nhóm phân tích: giảm thao tác và sai sót khi phân phối cùng video lên nhiều nền tảng; không đồng nghĩa với quyết định phải dùng AI. |
+| **Kiểm chứng / nghiên cứu (CP4)** | Hỗ trợ cấu trúc Assumption Map gồm 6 giả định, đọc đối chiếu tài liệu Buffer/Metricool và API các nền tảng; bổ sung các trường hợp trải nghiệm công khai làm tài liệu thứ cấp; chuẩn bị 3 case phỏng vấn **mô phỏng** (học viên, lab coach, nhân viên văn phòng). | Có dữ liệu để lập câu hỏi kiểm chứng và tín hiệu phản bác.  |
+| **Quy trình nhóm (CP5)** | Theo dõi/đối chiếu hai phương án từ các nhánh: phương án có AI của Nguyễn Đức Đạt và quy trình Rule có duyệt nội dung, trạng thái từng kênh, fallback của Võ Công Minh; hỗ trợ tổng hợp bản nhóm. | Báo cáo xác định được bước con người chuẩn bị/duyệt/kiểm tra, bước Rule có thể xử lý và điều kiện quay về đăng thủ công.  |
+| **Phát biểu vấn đề (CP5–CP6)** | Hỗ trợ rà soát tính thống nhất giữa Problem Statement v0 và v1, đặc biệt phạm vi đo từ lúc video đã hoàn tất tới khi xác nhận trạng thái đăng ba kênh; đưa vào bản tổng hợp target **110 → ≤85 phút/lượt**, đều là ước lượng chưa thử. | Làm rõ baseline, target, cách đo và ranh giới con người phê duyệt nội dung; tránh trình bày thời gian ước lượng như dữ liệu đo. |
+| **Mức can thiệp AI (CP6)** | Đối chiếu lập luận No AI / Rule / Workflow / Agent với đặc điểm bài toán và các giới hạn API; đây là phần Tạ Tiến Dũng chủ trì trong bản nhóm. | Kết luận phù hợp với các thao tác xác định trước: ưu tiên Rule hoặc công cụ có sẵn, chưa đủ lý do xây agent tự quyết định. |
+| **Quyết định (CP6)** | Hỗ trợ tổng hợp và kiểm tra tính nhất quán của kết luận đã ghi: **No-Go cho AI**, **Not Yet cho việc triển khai Rule tùy biến** nếu thiếu bằng chứng nhu cầu và quyền API. | Phân biệt được việc không cần AI với việc có nên lập trình công cụ mới ngay hay không; giữ các điều kiện pilot và ngưỡng dừng trong báo cáo nhóm. |
 
 ---
 
 ## 5. Dùng AI
 
-| Mốc hoạt động | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
+> Ghi nhận trung thực việc sử dụng AI trong quá trình xây dựng tài liệu. Các mô tả dưới đây **không được dùng để nhận những phần do AI gợi ý là kết quả họp nhóm hay phỏng vấn thật**.
+
+| Mốc hoạt động | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì / cần xác minh gì? |
 |---|---|---|---|---|
-| CP1 Rà soát vấn đề | AI tổng hợp 8 vấn đề gợi ý từ những sự cố phát triển phần mềm từng được trao đổi trước đó. | Giúp diễn đạt Job Story theo người gặp vấn đề và chỉ ra những chỗ còn thiếu bằng chứng. | Một số ngày tháng, thời gian xử lý và tần suất chưa được xác minh; các gợi ý của AI không thay thế bước tự rà soát ban đầu. | Cần tự kiểm tra từng sự cố, tự rà soát vấn đề và thay các số liệu thiếu căn cứ trước khi nộp bài. |
-| CP2 Problem Card | AI phác thảo 3 thẻ vấn đề, các quy trình và phần phản biện từ góc nhìn người quản lý sản phẩm. | Làm rõ các điểm nghẽn, ý tưởng về số liệu ban đầu/mục tiêu và phương án không dùng AI. | Thời gian đề xuất chỉ là giả định và các điểm nghẽn chưa được đo thực tế. | Cần tự rà soát các thẻ vấn đề, bấm giờ công việc thật, xác nhận thẻ muốn lựa chọn và ghi lại các quyết định thực tế của bản thân. |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| **CP1 — Rà soát vấn đề** | Nhờ AI tổng hợp 8 khó khăn kỹ thuật từng trao đổi (KillyTech, Git, ClickHouse, đọc repo). | Biến tình huống thành Job Story, gợi ý actor và dấu hiệu cần kiểm chứng. | Không có số phút hoặc tần suất thật cho nhiều vấn đề; không thể thay bước tự scan. | Giữ các tình huống có dấu vết, đánh dấu rõ sự kiện chưa đo; tự kiểm chứng lại trước nộp. |
+| **CP2 — Problem Card** | Nhờ AI tạo cấu trúc 3 card, vẽ quy trình nháp và phản biện giả thuyết. | Chỉ ra bottleneck cụ thể, gợi ý cách đo và phương án không AI. | AI tự ước lượng 60/43/58 phút; các con số và bước nghẽn chưa được đo thật. | Ghi rõ toàn bộ là ước lượng, không coi là kết quả thực nghiệm; cần tự xác nhận thứ tự và bottleneck. |
+| **CP3 — Tổng hợp tài liệu sau thảo luận** | Nhờ AI sắp xếp 12 candidate, hỗ trợ Cluster, OST, bảng shortlist và câu hỏi minh họa. | Giúp trình bày nhất quán problem → actor → bottleneck và tách pain khỏi solution. | AI đề xuất candidate #3/#6/#9 và một loạt câu hỏi, không có nghĩa là thành viên đã pitch hoặc hỏi nguyên văn như vậy. | Tôi xác nhận ba candidate bổ sung được đưa vào bảng; tách riêng câu hỏi tôi thực sự cung cấp với các câu do AI gợi ý. **CP3 live pitch/challenge không được dùng AI thay.** |
+| **CP4 — Research** | Nhờ AI tổng hợp tài liệu công cụ quản lý nội dung và tài liệu API; chuẩn bị case mô phỏng và phân tích nguồn diễn đàn công khai. | Gợi ý giới hạn quyền đăng, rủi ro API và các tín hiệu phản bác về tần suất đăng hoặc thời gian chờ tải. | AI không thể tạo dữ liệu phỏng vấn thật. Case được viết giống Interview Snapshot có thể dễ bị hiểu nhầm là kiểm chứng thực tế. | Đặt nhãn **MÔ PHỎNG**, giữ số phỏng vấn/survey thật bằng 0; các nguồn diễn đàn được ghi là nghiên cứu thứ cấp. Cần đối chiếu từng link trước nộp. |
+| **CP5 — Quy trình** | Nhờ AI hỗ trợ ghép bản CP5 từ các nhánh cá nhân và rà soát phạm vi before/after. | Làm nổi bật bước Rule, human approval, kiểm tra trạng thái, fallback khi API lỗi. | Quy trình AI và Rule ban đầu khác nhau; số 120 và 110 phút không cùng phạm vi và chưa được đo. | Giữ phương án Rule làm bản phân tích chính, lưu bản AI làm phương án so sánh; loại 10 phút xuất video khỏi cả hai phía. |
+| **CP5–CP6 — Problem Statement** | Nhờ AI đối chiếu v0–v1, gợi ý rủi ro sai tài khoản/đăng trùng và cách kiểm tra metric. | Giúp xác định trường còn thiếu và giữ baseline/target trong cùng phạm vi. | Các target tiết kiệm thời gian chỉ là giả định; AI không xác nhận được công cụ đã hoạt động trên đủ các nền tảng. | Đánh dấu **110 → ≤85 phút/lượt** là baseline/target ước lượng, kèm điều kiện thử nghiệm và cách đo; quyết định cuối phải do nhóm tự chốt. |
+| **CP6 — Mức can thiệp / quyết định** | Dùng AI hỗ trợ so sánh No AI / Rule / Workflow / Agent và kiểm tra tính logic giữa rủi ro với kết luận. | Nêu được lý do Rule có thể đủ cho thao tác cố định, không cần Agent. | AI không thể xác minh tính khả thi API thực tế hay thay nhóm quyết định Go/No-Go. | Giữ kết luận của nhóm **No-Go đối với AI; Not Yet đối với việc tự xây Rule**, chỉ triển khai sau khi thử công cụ/API và có bằng chứng người dùng. |
 
 ---
 
 ## 6. Tự đánh giá (CP7)
 
-Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
-
 **6.1. Tôi học được gì khi nghe ba vấn đề ưu tiên của các bạn khác?**
 
-**6.2. Nhóm có lúc nào bị "ưu tiên giải pháp trước" (solution-first: nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+Trong bảng tổng hợp của nhóm, các vấn đề không chỉ xuất phát từ lập trình mà còn liên quan đến sản xuất video, quản lý công việc và đọc tài liệu. Những đề xuất về đăng video và tìm tư liệu dựng video khác với vấn đề sửa giao diện responsive, tra cứu hướng dẫn hoặc xử lý lỗi ClickHouse mà tôi chuẩn bị. Sự khác biệt quan trọng là mỗi nhóm người có tình huống, tần suất và mức ảnh hưởng riêng; vì thế không thể chỉ dựa vào tên vấn đề hoặc việc có thể sử dụng AI để quyết định ưu tiên. Một vấn đề đáng chọn cần có người gặp vấn đề rõ ràng, bằng chứng về thao tác thực tế và khả năng đo lường.
+
+Sau khi nghe Nguyễn Đức Đạat trình bày về các case liên quan đến edit video hay Võ Công Minh trình bày về các case khi mua hàng, tôi nhận ra vấn đề mà AI có thể được áp dụng để xử lý có thể rất đời thường, không cần phải là những vấn đề quá hàn lâm và máy móc.
+
+**6.2. Nhóm có lúc nào bị “ưu tiên giải pháp trước” (solution-first) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+
+Trong danh sách ứng viên ban đầu có những cách gọi gắn sẵn giải pháp, chẳng hạn “AI upload video”, “AI tìm source” hoặc “agent hỗ trợ”. Những cách gọi này có nguy cơ khiến nhóm mặc định cần AI trước khi hiểu người đăng video đang khó ở đâu. Tài liệu nhóm về sau chuyển trọng tâm sang các thao tác đăng lặp lại, nguy cơ sai cấu hình và việc khó theo dõi trạng thái của từng nền tảng. Sau khi tách vấn đề khỏi giải pháp, nhóm mới có cơ sở so sánh đăng thủ công bằng checklist, sử dụng công cụ có sẵn, lập trình theo quy tắc và AI.
+
+Sau khi nghe các case của mọi người, tôi thường có xu hướng đề xuất hoặc đào sâu vào phân tích vấn đề trước khi tán thành hoặc đề xuất giải pháp với mọi người.
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
 
+Trong phần CP3 có ghi lại câu hỏi tôi cung cấp về vấn đề đăng video: **“Tại sao không dùng AI để làm cho nhanh, tại sao lại dùng tools và code?”** Câu trả lời được ghi nhận là công cụ và mã nguồn thông thường có thể xử lý công việc theo quy tắc một cách chính xác, nên không nhất thiết phải đưa AI vào. Đây là một ví dụ cụ thể về việc thách thức lựa chọn giải pháp, đồng thời phù hợp với kết luận thận trọng của phần CP6: chưa có lý do để xây Agent chỉ nhằm tự động hóa các bước đăng đã xác định trước. Tuy nhiên, sau khi nghe Nguyễn Đức đạt trình bày lý do, tôi đã đồng ý rằng hướng dùng AI chưa thực sự tốt hơn dùng tool.
+
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+
+Tài liệu nghiên cứu thứ cấp cho thấy người đăng nhiều video có thể thấy mệt vì phải thao tác trên nhiều nền tảng, nhưng không phải ai cũng gặp cùng một điểm nghẽn. Có trường hợp mất thời gian chỉnh nội dung cho từng mạng xã hội, có trường hợp phải chờ tải video và xử lý, và cũng có người đã sử dụng công cụ quản lý đa kênh. Việc xem xét Buffer, Metricool và tài liệu API cho thấy có nhiều khả năng hỗ trợ bằng công cụ sẵn có hoặc quy tắc cố định mà chưa cần đến AI. Vì vậy, nhóm cần kiểm tra riêng thời gian thao tác, thời gian chờ và việc xác nhận đăng thành công, thay vì kết luận ngay rằng mọi người đều cần AI để tự động đăng video.
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 
+Điểm cần làm rõ trong Problem Statement là nối được **actor → quy trình → bottleneck → tác động → chỉ số → ranh giới can thiệp** mà không nhảy thẳng sang giải pháp. Với tình huống đăng video đa nền tảng, phạm vi đo phải nhất quán: bắt đầu từ lúc video đã sẵn sàng và kết thúc khi xác nhận trạng thái của ba kênh; không trộn thời gian quay hoặc dựng vào một phía của phép so sánh. Trong bản tổng hợp, mốc **110 phút/lượt → tối đa 85 phút/lượt** mới là giả định, không phải số đã bấm giờ. Một ranh giới quan trọng khác là nội dung phải được con người kiểm duyệt, xác nhận tài khoản và kiểm tra kết quả, tránh tự đăng nhầm hoặc đăng trùng. Nếu không nêu rõ những điều này, chỉ số sẽ khó kiểm chứng và giải pháp có thể tạo thêm rủi ro.
+
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 
-**6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+Các khoảng trống còn thấy trong báo cáo gợi ý một thứ tự làm việc hợp lý hơn: tự xác minh các candidate và tình huống thực tế trước, hỏi những người ngoài nhóm thực sự đăng nhiều nền tảng, ghi thời gian từng bước, rồi thử template/checklist hoặc công cụ có sẵn trước khi đề xuất tự xây hệ thống. Đặc biệt cần tách công sức chuẩn bị nội dung khỏi thao tác tải lên và thời gian chờ nền tảng xử lý. Khi phản biện một giải pháp, cần hỏi về bằng chứng của điểm nghẽn, khả năng giải quyết bằng cách đơn giản hơn, điều kiện sử dụng API và rủi ro nếu đăng nhầm tài khoản hoặc trùng bài.
+
+Nếu được làm lại, tôi sẽ dành nhiều tg hơn để khảo sát người dùng thực tế, ghi lại các case cụ thể hơn.
+
+**6.7. Hiểu bài — tự giải thích bằng 5–8 câu, không nhìn tài liệu**
+
+1. **Problem:** Người cần phân phối cùng một video lên nhiều nền tảng có thể mất công làm lại thao tác và theo dõi kết quả từng kênh.
+2. **Quy trình:** Video hoàn tất → chuẩn bị mô tả/cấu hình → đăng trên các kênh → kiểm tra trạng thái từng nơi.
+3. **Bottleneck:** Thao tác lặp và nguy cơ bỏ sót hoặc đăng nhầm; thời gian thao tác cần được đo riêng với thời gian chờ tải/xử lý.
+4. **Metric:** Mốc 110 → ≤85 phút/lượt là **giả định cần kiểm chứng**, không được coi là kết quả thực nghiệm; còn phải theo dõi lỗi, đăng trùng và trạng thái đúng kênh.
+5. **Boundary:** Con người phải duyệt nội dung và tài khoản trước khi đăng; hệ thống không được tự ý thay đổi nội dung, bỏ qua quyền hoặc đăng lại khi trạng thái chưa rõ.
+6. **Mức can thiệp:** Ưu tiên cải thiện quy trình, công cụ có sẵn hoặc Rule; chưa có căn cứ để sử dụng AI/Agent cho các bước xác định trước.
+7. **Quyết định:** Theo kết luận được tổng hợp trong báo cáo cá nhân, **No-Go với AI**, đồng thời **Not Yet** đối với việc tự xây Rule cho đến khi xác minh nhu cầu thực và quyền API.
 
 ---
-
 ## 7. Tài liệu tham khảo
 
 -
