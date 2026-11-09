@@ -78,47 +78,76 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 
 | # | Giả định | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
 |---:|---|---|---:|---:|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
+| 1 | Các video creator/editor khác cũng mất trên 45–60 phút mỗi lần đăng tải cùng một video lên 3 nền tảng (YouTube Shorts, TikTok, Instagram Reels) | Value | 5 | 2 | ✅ |
+| 2 | Nút thắt gây tốn thời gian và mệt mỏi nhất là khâu tùy biến lại tiêu đề, hook, caption và bộ hashtag cho phù hợp văn hóa từng nền tảng, chứ không phải thao tác bấm nút upload file | Value | 5 | 2 | ✅ |
+| 3 | Người xem trên TikTok, Reels và YouTube Shorts có phản ứng khác nhau rõ rệt với cùng một nội dung nếu không được tùy biến cách mở đầu (hook) và định dạng caption | Value | 4 | 3 | — |
+| 4 | Việc sử dụng công cụ tự động hóa hoặc API bên thứ ba để đăng video không làm giảm tương tác tự nhiên (shadowban/bóp reach) so với việc đăng trực tiếp trên ứng dụng | Viability | 5 | 1 | ✅ |
+| 5 | Các nền tảng mạng xã hội (YouTube, TikTok, Meta) cung cấp API ổn định cho phép tài khoản cá nhân upload và lên lịch tự động | Feasibility | 4 | 2 | ✅ |
+| 6 | Creator sẵn sàng chấp nhận quy trình kiểm duyệt (review) 1 lần trên màn hình tập trung thay vì để hệ thống tự động đăng hoàn toàn | Usability | 3 | 4 | — |
 
 *Điền 4–6 giả định; xóa dòng thừa.*
 
-Giả định nhóm kiểm chứng trong buổi này:
+Giả định nhóm kiểm chứng trong buổi này: **Giả định #1, #2 và #4** (các giả định có độ quan trọng cao nhưng bằng chứng thực tế còn yếu).
 
 ### 3.2. Kiểm chứng
 
-Cách đã dùng: Phỏng vấn / Survey / Log, ticket, review
+Cách đã dùng: **Phỏng vấn sâu theo The Mom Test (3 người)** + **Micro Poll (8 người trong lớp)**.
 
-Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file trong `report/assets/cp4-interview-snapshot-N.md`):
+#### Interview snapshot 1:
 
 | Trường | Nội dung |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | |
-| Câu nói đáng nhớ nhất (nguyên văn) | |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | |
-| Hiện đang xử lý bằng cách nào (workaround)? | |
-| Mất bao lâu, bao lần? | |
-| Insight / opportunity rút ra | |
+| Người được hỏi (vai trò, không ghi tên thật) | Solo Creator kênh TikTok & YouTube Shorts giáo dục tài chính cá nhân (~18k followers) |
+| Câu nói đáng nhớ nhất (nguyên văn) | *"Nhiều hôm dựng xong lúc 10h đêm mệt rã rời, định đăng cả 3 kênh nhưng mở TikTok lên chỉnh caption xong là muốn đi ngủ luôn, bỏ lỡ luôn YouTube với Instagram."* |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Tối thứ Năm tuần trước, dựng xong video phân tích lạm phát 45s, mất hơn 40 phút chỉ để đổi định dạng caption từ TikTok sang Reels và tìm lại hashtag phù hợp. |
+| Hiện đang xử lý bằng cách nào (workaround)? | Tạo sẵn một ghi chú trong Apple Notes chứa khoảng 30 hashtag chung rồi mỗi lần đăng thì copy paste đại trà vào cả 3 app. |
+| Mất bao lâu, bao lần? | Trung bình 45–50 phút cho mỗi video; 3 video/tuần (khoảng 2.5 tiếng/tuần chỉ để đăng). |
+| Insight / opportunity rút ra | Nhu cầu phủ sóng đa nền tảng là có thật nhưng ma sát tâm lý (friction) ở khâu đổi văn phong caption khiến creator thường xuyên bỏ cuộc giữa chừng. |
+
+#### Interview snapshot 2:
+
+| Trường | Nội dung |
+|---|---|
+| Người được hỏi (vai trò, không ghi tên thật) | Freelance Video Editor kiêm quản trị viên kênh cho trung tâm Anh ngữ |
+| Câu nói đáng nhớ nhất (nguyên văn) | *"Mỗi nền tảng có một gu riêng: TikTok thích giật gân hài hước, YouTube Shorts thích tò mò kiến thức, Instagram cần chia sẻ sâu sắc. Copy y nguyên 1 caption đăng cả 3 nơi là view tụt thảm hại."* |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Thứ Sáu vừa qua, phụ trách đăng 2 video ngắn lên hệ thống mạng xã hội của trung tâm, mất gần 2 tiếng đồng hồ vì phải viết lại 6 phiên bản caption khác nhau. |
+| Hiện đang xử lý bằng cách nào (workaround)? | Dùng ChatGPT mở 1 tab riêng, copy kịch bản vào prompt: 'viết lại caption này cho TikTok/Reels', sau đó copy thủ công qua từng nền tảng. |
+| Mất bao lâu, bao lần? | Khoảng 50–60 phút mỗi lần đăng 1 video đa kênh. |
+| Insight / opportunity rút ra | Thao tác upload thuần túy không nặng bằng việc chuyển đổi "tone of voice" (ngữ điệu và cấu trúc text) cho từng tệp khán giả. |
+
+#### Interview snapshot 3 (Tín hiệu phản bác):
+
+| Trường | Nội dung |
+|---|---|
+| Người được hỏi (vai trò, không ghi tên thật) | Bạn sinh viên làm video vlog / giải trí đời sống cá nhân trên TikTok |
+| Câu nói đáng nhớ nhất (nguyên văn) | *"Mình dựng bằng CapCut trên điện thoại xong có nút bấm chia sẻ thẳng lên TikTok trong 30 giây là xong, mình chẳng cần đăng lên nhiều nền tảng làm gì cho mệt đầu."* |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Không gặp vấn đề, chỉ tập trung làm 1 nền tảng duy nhất là TikTok. |
+| Hiện đang xử lý bằng cách nào (workaround)? | Dùng tính năng Export to TikTok tích hợp sẵn của CapCut. |
+| Mất bao lâu, bao lần? | 1–2 phút/lần đăng. |
+| Insight / opportunity rút ra | **Tín hiệu phản bác:** Người làm nội dung giải trí thông thường hoặc kênh đơn lẻ không có nỗi đau này. Nhóm bắt buộc phải thu hẹp actor sang nhóm người sáng tạo nội dung giáo dục/thương hiệu có chiến lược đa kênh. |
 
 Tổng hợp:
 
 | Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
 |---|---:|---|---|
-| | | | |
+| Phỏng vấn sâu (The Mom Test) | 3 | 2/3 người khẳng định mất từ 40–60 phút/lần đăng và thừa nhận khâu tùy biến caption/hashtag là nút thắt mệt mỏi nhất | 1 người (làm vlog giải trí) cho biết chỉ đăng 1 kênh duy nhất qua CapCut và không có nhu cầu làm đa nền tảng |
+| Micro Poll trong lớp | 8 sinh viên có kênh nội dung | 6/8 bạn từng cố gắng đăng video lên cả TikTok và Shorts nhưng bỏ cuộc sau vài tuần vì tốn thời gian format lại text | 2/8 bạn bày tỏ lo ngại sâu sắc rằng việc dùng công cụ tự động đăng tải bên thứ ba sẽ bị TikTok bóp tương tác (shadowban) |
 
 **Nhóm đã sửa problem thế nào sau kiểm chứng:**
+1. **Thu hẹp tệp Actor:** Không làm cho đối tượng sáng tạo video giải trí ngẫu hứng, mà tập trung chính xác vào **Solo Creator / Video Editor kênh Education & Knowledge**, nơi nội dung đòi hỏi tính chính xác, phân phối đa kênh để tối đa hóa lượt tiếp cận và cần tùy biến thông điệp theo từng cộng đồng.
+2. **Định hình lại trọng tâm bài toán:** Chuyển từ "tự động hóa bấm nút upload video" thành "**hỗ trợ tự động hóa việc tùy biến metadata (hook, caption, hashtag) từ kịch bản gốc và phân phối tập trung**".
+3. **Thêm cơ chế phòng ngừa rủi ro (Boundary & Fallback):** Để giải quyết lo ngại bị bóp reach (tín hiệu phản bác ở poll), hệ thống tương lai sẽ không auto-publish ngầm, mà giữ chế độ tải video ở dạng bản nháp (Draft) hoặc webhook gửi thông báo về điện thoại để Creator bấm nút xác nhận cuối cùng trên app native nếu muốn an toàn 100%.
 
 ### 3.3. Research giải pháp đã có
 
 | Công cụ / case / pattern | Link | Giải bước nào trong quy trình? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| **Metricool** | https://metricool.com/ | Bước 3, 4, 5 (Lên lịch và đăng tải đa kênh tập trung từ 1 dashboard) | Quản lý đa nền tảng (YouTube, TikTok, Instagram, Facebook), kết nối API chính thống, có báo cáo phân tích trực quan | Tính năng AI Assistant chỉ viết lại câu chữ chung chung, không tự bóc tách ngữ cảnh kịch bản video giáo dục để tối ưu hook chuyên sâu; chi phí bản trả phí khá cao đối với sinh viên/solo creator | Không cần tự lập trình server publish video từ đầu, có thể học hỏi cách Metricool tổ chức giao diện quản lý lịch xuất bản đa kênh |
+| **Repurpose.io** | https://repurpose.io/ | Bước 1 → 5 (Tự động lấy video từ kênh nguồn như TikTok để re-up sang YouTube Shorts và Instagram Reels) | Tự động hóa hoàn toàn 100% (Full Automate), không cần can thiệp thủ công sau khi setup quy trình | Sao chép nguyên xi caption và hashtag từ nền tảng gốc sang nền tảng đích (không đổi tone-of-voice); rủi ro dính logo/watermark; dễ bị thuật toán đánh giá là spam/re-up nội dung rác | **Bài học lớn:** Tự động hóa hoàn toàn (Automate) sẽ giết chết chất lượng nội dung. Bắt buộc phải đi theo hướng **Workflow (Augment)** có bước AI biến đổi văn phong và con người kiểm duyệt trước khi đăng |
+| **Make.com (Integromat) + OpenAI API** | https://www.make.com/en/templates | Bước 2, 4 (Kịch bản tự động: nhận file/text → gửi OpenAI prompt sinh 3 format metadata → gửi webhook) | Cực kỳ linh hoạt, chi phí tính theo lượt chạy (pay-as-you-go) rất rẻ, dễ dàng tùy biến system prompt cho ngách giáo dục hoạt họa | Đòi hỏi kiến thức cấu hình kỹ thuật, token xác thực mạng xã hội (đặc biệt là TikTok/Meta) hay hết hạn và cần tạo tài khoản nhà phát triển (Developer Account) | Mượn kiến trúc tích hợp: dùng Rule/Webhook để trung chuyển dữ liệu và dùng LLM chuyên trách bước sáng tạo ngôn ngữ |
+
+**Kết luận research:**
+Thị trường đã có nhiều công cụ lên lịch (như Metricool, Buffer) hoặc re-up tự động (như Repurpose.io), nhưng đều bộc lộ điểm yếu chết người: hoặc chỉ đăng thủ công kèm text sơ sài, hoặc auto-copy nguyên xi làm tụt tương tác. Hướng đi đúng đắn nhất là: **Lấy kịch bản gốc → AI (LLM) tùy biến 3 phong cách caption/hashtag theo gu từng nền tảng → Creator review duyệt 1 chạm → Webhook/API đẩy sang chế độ hẹn giờ**.
 
 ---
 
