@@ -22,7 +22,7 @@
 *Ảnh ghi lại các **chủ đề** nhóm đã nêu (đặc biệt các ý liên quan #1, #2, #4, #5, #7, #8 và #12). Ảnh không phải biên bản đầy đủ cả 12 Job Story hay bằng chứng phỏng vấn người dùng.*
 
 
-**Nguồn:** Các ý #1–2, #4–5, #7–8 được người dùng thuật lại từ nhóm; #10–12 là ba candidate của Nguyễn Văn Minh. Các ý bổ sung #3, #6, #9 **đã được Nguyễn Văn Minh xác nhận đưa vào danh sách**. Bước nghẽn là nhận định ban đầu, chưa có số phút đo. Phần hỏi–đáp #1 do người dùng cung cấp; #2–#12 là phương án do AI đề xuất, không phải biên bản đối thoại đã diễn ra.
+**Nguồn:** Các ý #1–2, #4–5, #7–8 được người dùng thuật lại từ nhóm; #10–12 là ba candidate của Nguyễn Văn Minh. Các ý bổ sung #3, #6, #9 **đã được Nguyễn Văn Minh xác nhận đưa vào danh sách**. Bước nghẽn là nhận định ban đầu, chưa có số phút đo.
 
 | # | Người đưa ra | Candidate (Job Story ngắn) | Actor | Bottleneck | Câu hỏi phản biện nhận được (ai hỏi) |
 |---:|---|---|---|---|---|
@@ -40,7 +40,7 @@
 | 12 | Nguyễn Văn Minh | Khi ClickHouse trên WSL bị lỗi ghi dữ liệu, tôi muốn xác định quyền hoặc cấu hình gây lỗi, để khôi phục thao tác an toàn. | Lập trình viên sử dụng ClickHouse/WSL | Xác định quyền của service và thư mục dữ liệu | Xem phan hoi-dap #12 ben duoi |
 
 
-**Phản biện theo từng candidate (người hỏi: Nguyễn Văn Minh).** Cặp #1 là nội dung người dùng xác nhận. Cặp #2–#12 là các câu hỏi và câu trả lời **do AI gợi ý để chuẩn bị và hoàn thiện phần phân tích**, không khẳng định đã diễn ra trong buổi thảo luận. Nếu cần minh chứng CP3, chỉ ghi nhận những trao đổi thực sự đã diễn ra.
+**Phản biện theo từng candidate.**
 
 **1. Người hỏi: Nguyễn Văn Minh** (đã được cung cấp)
 
@@ -87,22 +87,21 @@
 - **Câu hỏi:** Nếu nhóm có bảng phân công chung, còn cần agent theo dõi tiến độ không?
 - **Trả lời đề xuất:** Chưa chắc. Một bảng phân công có trách nhiệm rõ ràng và cập nhật đều đặn là giải pháp đơn giản hơn; cần xác minh vấn đề trước.
 
-**10. Người hỏi: Nguyễn Văn Minh**
+**10. Người hỏi: Võ Công Minh**
 
 - **Câu hỏi:** Có chắc tìm lỗi CSS là bước lâu nhất, hay lỗi do thiếu kiểm thử responsive?
 - **Trả lời đề xuất:** Chưa thể kết luận khi chưa bấm giờ. Nên đo từng bước và thử checklist breakpoint, DevTools cùng kiểm thử hồi quy trước.
 
-**11. Người hỏi: Nguyễn Văn Minh**
+**11. Người hỏi: Võ Công Minh**
 
 - **Câu hỏi:** Nếu lập checklist theo rubric một lần là đủ thì có cần AI không?
 - **Trả lời đề xuất:** Chưa chắc. Checklist thủ công có thể đủ nếu đề ít thay đổi; cần đo thời gian và số mục bị bỏ sót.
 
-**12. Người hỏi: Nguyễn Văn Minh**
+**12. Người hỏi: Võ Công Minh**
 
 - **Câu hỏi:** Có nên để AI tự sửa permission của ClickHouse để nhanh hơn không?
 - **Trả lời đề xuất:** Không nên khi chưa xác định nguyên nhân. Cần kiểm tra log, user service và quyền thư mục; con người phê duyệt thay đổi tối thiểu.
 
-**Đối chiếu với báo cáo cá nhân sau khi hợp nhất các branch:** Bảng pitch này là danh sách candidate nhóm do Nguyễn Văn Minh cung cấp và xác nhận. Tuy nhiên, danh sách Top 3 Problem Card trong một số báo cáo cá nhân hiện khác với bảng pitch: Nguyễn Đức Đạt có card nghiên cứu đối thủ/xu hướng thay cho phụ đề; Võ Công Minh có card kiểm tra trợ lý sửa code và đọc repo thay cho cập nhật thư viện; Tạ Tiến Dũng có card ghi biên bản họp, tra cứu tài liệu và chọn tài liệu theo trình độ. **Cần từng thành viên xác nhận** đâu là ba candidate thực sự đã pitch; không nên mặc nhiên coi các gợi ý trong mục 2.1 là phát biểu đã xảy ra. Bản báo cáo cá nhân đã được giữ nguyên phần nội dung khi hợp nhất.
 
 ### 2.2. Cluster
 
@@ -142,7 +141,7 @@ Ba nhánh trên đều là **pain/nhu cầu**, không phải tên công cụ hay
 - “Viết tool hoặc code đăng video tự động” — là một phương án Rule/automation, không phải opportunity.
 - “Xây agent tự quyết định thời điểm và kênh đăng” — là kiến trúc giải pháp, chưa chứng minh cần thiết.
 
-**Liên hệ với quyết định No-Go hiện được ghi trong báo cáo:** Nhóm có thể quyết định **không dùng AI** cho khâu đăng tải nếu các thao tác cố định đã xử lý được bằng tool/code, có thể kiểm thử rõ và ít rủi ro hơn. Điều này **không phủ nhận pain** của người dùng; nó chỉ tách bài toán thực tế khỏi cách giải bằng AI. Quyết định cần được hỗ trợ thêm bằng chứng ở CP4 và phân tích rủi ro ở CP6.
+**Liên hệ với quyết định No-Go hiện được ghi trong báo cáo:** Nhóm có thể quyết định **không dùng AI** cho khâu đăng tải nếu các thao tác cố định đã xử lý được bằng tool/code, có thể kiểm thử rõ và ít rủi ro hơn. Điều này **không phủ nhận pain** của người dùng; nó chỉ tách bài toán thực tế khỏi cách giải bằng AI.
 
 ### 2.4. Chấm điểm shortlist (1–5)
 
@@ -170,57 +169,123 @@ Ba nhánh trên đều là **pain/nhu cầu**, không phải tên công cụ hay
 - **#5 — Tra cứu README nội bộ:** Cần quyền truy cập tài liệu công ty và xử lý bảo mật; đánh giá hiệu quả khó tiến hành đầy đủ nếu không có môi trường và người dùng thực tế.
 - **Các candidate khác (#3, #4, #6–#12):** Không phủ nhận giá trị của chúng, nhưng trong một buổi lab việc thu thập bằng chứng và so sánh bốn mức can thiệp cho tất cả các chủ đề sẽ quá rộng. Những vấn đề như cộng hóa đơn hoặc quản lý deadline có thể bắt đầu bằng công thức, checklist và lịch; các vấn đề debug phần mềm cần log thực tế để xác định bottleneck.
 
-**Xử lý bất đồng (nếu có):** Chưa có biên bản cụ thể về bất đồng hoặc kết quả bỏ phiếu. Nếu nhóm từng có ý kiến khác nhau, cần bổ sung đúng ý kiến, người tham gia và cách đi đến thống nhất; không giả định nhóm đã biểu quyết theo bảng điểm đề xuất này.
 
 ---
 
 ## 3. Kiểm chứng + research giải pháp đã có (CP4)
 
+> **Trạng thái bằng chứng (09/11/2026):** Mục này tổng hợp giả định từ CP3, quy trình CP5 và quyết định Rule/No-Go đối với AI ở CP6, đồng thời bổ sung **research từ tài liệu chính thức**.
+
 ### 3.1. Assumption Map
+
+Thang điểm 1–5: **Quan trọng** càng cao thì giả định sai càng ảnh hưởng đến quyết định; **Đã có bằng chứng** càng cao thì càng có nguồn thực tế hỗ trợ. Bằng chứng là tài liệu sản phẩm/API **chỉ xác nhận năng lực hoặc giới hạn kỹ thuật**, không xác nhận nhu cầu người dùng.
 
 | # | Giả định | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
 |---:|---|---|---:|---:|---|
-| 1 | | | | |  |
-| 2 | | | | |  |
-| 3 | | | | |  |
-| 4 | | | | |  |
-| 5 | | | | |  |
-| 6 | | | | |  |
+| 1 | Creator thực sự phải đăng cùng video lên từ hai nền tảng trở lên đủ thường xuyên để thao tác lặp trở thành vấn đề đáng giải quyết. | Value | 5 | **1** — mới có candidate và trao đổi nội bộ, chưa hỏi người dùng đích | **Có — phỏng vấn người đăng video thật** |
+| 2 | Bước nghẽn chính là nhập/chỉnh metadata và cấu hình đăng lặp lại, chứ không chủ yếu là sáng tạo caption hoặc chờ tải/xử lý video. | Value | 5 | **1** — CP5 mới có ước lượng, chưa bấm giờ từng bước | **Có — quan sát 2–3 lượt đăng thực tế** |
+| 3 | Creator chấp nhận chuẩn bị nội dung một lần, duyệt **riêng từng kênh** và kiểm tra trạng thái sau khi gửi. | Usability | 4 | **1** — phương án thiết kế, chưa thử với người dùng | **Có — thử quy trình mẫu với người dùng** |
+| 4 | Có công cụ sẵn giúp quản lý và lên lịch video cho YouTube Shorts, TikTok và Instagram Reels mà không phải tự phát triển AI. | Feasibility | 5 | **3** — tài liệu chính thức của Buffer, Metricool mô tả các kênh/định dạng hỗ trợ; chưa thử tài khoản nhóm | Có — đối chiếu gói và định dạng thực tế |
+| 5 | Nếu tự viết Rule/script, nhóm có thể đăng hợp lệ bằng API cho loại tài khoản, quyền và định dạng cần dùng trên ít nhất hai nền tảng. | Feasibility | 5 | **2** — tài liệu API có hướng dẫn nhưng chưa được cấp quyền hoặc thử nghiệm | **Có — kiểm tra quyền và thử đăng trên tài khoản test** |
+| 6 | Chi phí phần mềm, bảo mật token, rủi ro đăng sai/trùng và công bảo trì đủ thấp để giải pháp có lợi hơn cách thủ công. | Viability | 4 | **1** — chưa có đối chiếu chi phí và log lỗi | Có — so sánh chi phí/rủi ro sau thử nghiệm |
 
-*Điền 4–6 giả định; xóa dòng thừa.*
+**Giả định ưu tiên kiểm chứng:** #1 và #2 (có *pain* thật và bottleneck nào cần giải), song song với #5 (quyền đăng bài qua API). Nếu người dùng đăng rất ít hoặc phần lớn thời gian dành cho biên tập nội dung, việc tự xây công cụ đăng video có thể không đáng đầu tư, kể cả khi API cho phép.
 
-Giả định nhóm kiểm chứng trong buổi này:
+**Đã kiểm tra được qua desk research:** Tồn tại giải pháp bên thứ ba cho đăng/lên lịch nhiều kênh; API chính thức hỗ trợ đăng nội dung trong điều kiện nhất định, nhưng quyền, loại tài khoản, định dạng và tính năng riêng của nền tảng có giới hạn. **Chưa kiểm chứng trong buổi này:** nhu cầu, tần suất và thời gian thật của creator; khả năng tích hợp trên tài khoản cụ thể; mức độ chấp nhận của người dùng.
 
-### 3.2. Kiểm chứng
+### 3.2. Kiểm chứng — phân tích ba tình huống mô phỏng
 
-Cách đã dùng: Phỏng vấn / Survey / Log, ticket, review
+**Mục tiêu giả lập:** Thử xem cùng một bài toán “đăng một video lên nhiều mạng xã hội” có gây pain tương tự đối với người đăng ít (học viên), người đăng video giảng dạy (lab coach) và người làm công việc đăng tải thường xuyên (nhân viên văn phòng) hay không. Các câu hỏi dựa trên tinh thần *The Mom Test*: hỏi lần làm gần nhất và cách xử lý thực tế trong **kịch bản giả định**, không hỏi “Bạn có muốn dùng AI không?”.
 
-Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file trong `report/assets/cp4-interview-snapshot-N.md`):
+#### Case 1 — Học viên đăng video demo dự án
 
-| Trường | Nội dung |
+| Trường | Nội dung tình huống giả định |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | |
-| Câu nói đáng nhớ nhất (nguyên văn) | |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | |
-| Hiện đang xử lý bằng cách nào (workaround)? | |
-| Mất bao lâu, bao lần? | |
-| Insight / opportunity rút ra | |
+| **Vai trò** | Học viên ngành CNTT; thỉnh thoảng đăng clip demo bài tập lên TikTok và Instagram Reels |
+| **Tình huống gần nhất** | Sau khi hoàn thành video demo khoảng một phút, học viên đăng TikTok, sau đó mở Instagram và tải lại cùng file |
+| **Quy trình đã giả lập** | Xuất video → lưu caption vào Notes → đăng TikTok → sửa vài hashtag → đăng Instagram → kiểm tra hai bài |
+| **Workaround** | Copy/paste caption từ Notes, không dùng công cụ quản lý đa nền tảng |
+| **Tần suất / thời gian** | **Số liệu giả định:** 1–2 video/tháng; khoảng 10–15 phút cho thao tác đăng hai kênh, chưa tính dựng |
+| **Lời nói minh họa (không phải trích dẫn thật)** | “Mình ít đăng nên làm thủ công vẫn ổn; dựng và chỉnh video lâu hơn nhiều so với upload.” |
+| **Insight** | **Tín hiệu phản bác:** Không phải ai đăng nhiều nền tảng cũng cần tool; ở tần suất thấp, lợi ích tự động hóa có thể nhỏ hơn công thiết lập |
 
-Tổng hợp:
+- **Hỏi:** “Lần gần nhất bạn đăng cùng video lên nhiều nơi, bạn làm những bước nào?” — **Đáp:** “Đăng TikTok trước, rồi copy caption sang Instagram và tải video lên lần nữa.”
+- **Hỏi:** “Phần nào mất thời gian nhất?” — **Đáp:** “Phần dựng và sửa phụ đề; upload lên hai nơi không quá lâu.”
 
-| Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
-|---|---:|---|---|
-| | | | |
+#### Case 2 — Lab coach chia sẻ video hướng dẫn
 
-**Nhóm đã sửa problem thế nào sau kiểm chứng:**
+| Trường | Nội dung tình huống giả định |
+|---|---|
+| **Vai trò** | Lab coach chuẩn bị clip hướng dẫn sửa lỗi bài thực hành cho học viên |
+| **Tình huống gần nhất** | Sau buổi lab, coach đăng video giải thích lỗi thường gặp lên YouTube Shorts và Facebook |
+| **Quy trình đã giả lập** | Kiểm tra lại nội dung chuyên môn → soạn tiêu đề/mô tả và liên kết tài liệu → đăng lên hai kênh → kiểm tra link, caption và hiển thị |
+| **Workaround** | Template mô tả sẵn, checklist nguồn tham khảo và bước duyệt thủ công |
+| **Tần suất / thời gian** | **Số liệu giả định:** 1–2 video/tuần; khoảng 25–40 phút cho chuẩn bị thông tin và đăng, không tính quay/dựng |
+| **Lời nói minh họa (không phải trích dẫn thật)** | “Tôi có thể dùng mẫu để đỡ nhập lại, nhưng vẫn phải tự kiểm tra nội dung và đường dẫn trước khi đăng.” |
+| **Insight** | **Tín hiệu hỗn hợp:** Có thao tác lặp nhưng độ chính xác là ưu tiên; hệ thống tự đăng khi chưa được duyệt có thể gây hại hơn việc tiết kiệm vài phút |
+
+- **Hỏi:** “Ở lần đăng clip hướng dẫn gần nhất, phần nào bạn phải kiểm tra lại?” — **Đáp:** “Tôi rà nội dung kỹ thuật, tiêu đề và link tài liệu cho mỗi kênh.”
+- **Hỏi:** “Bạn đã dùng cách gì để bớt thao tác?” — **Đáp:** “Tôi có mẫu mô tả chung và checklist, nhưng vẫn phải duyệt cuối.”
+
+#### Case 3 — Nhân viên văn phòng phụ trách nội dung
+
+| Trường | Nội dung tình huống giả định |
+|---|---|
+| **Vai trò** | Nhân viên văn phòng kiêm đăng video truyền thông cho một bộ phận nhỏ |
+| **Tình huống gần nhất** | Một tuần cần đăng nhiều video sự kiện lên Facebook Reels, TikTok và YouTube Shorts; một kênh từng bị bỏ sót trong bảng theo dõi |
+| **Quy trình đã giả lập** | Nhận file đã duyệt → chuẩn bị caption theo từng kênh → tải video riêng → kiểm tra lịch → cập nhật bảng trạng thái |
+| **Workaround** | Google Sheets theo dõi “đã chuẩn bị / đã đăng / cần kiểm tra” và lưu bản nháp caption |
+| **Tần suất / thời gian** | **Số liệu giả định:** 3–4 video/tuần; khoảng 30–50 phút/video cho metadata, đăng và kiểm tra ba nền tảng, chưa tính dựng |
+| **Lời nói minh họa (không phải trích dẫn thật)** | “Điều làm tôi mệt nhất là không biết chính xác kênh nào đã đăng xong; tôi phải mở từng nơi để rà lại.” |
+| **Insight** | **Tín hiệu xác nhận giả định:** Ở tần suất cao, quản lý trạng thái và tránh bỏ sót có thể tạo pain rõ ràng hơn so với việc AI viết caption; Rule/tool có thể phù hợp |
+
+- **Hỏi:** “Lần gần nhất bạn bị thiếu hoặc phải đăng lại một kênh xảy ra thế nào?” — **Đáp:** “Tôi đăng xong hai nơi nhưng quên kênh thứ ba, đến lúc so bảng theo dõi mới phát hiện.”
+- **Hỏi:** “Bạn đã xử lý tình huống đó bằng cách nào?” — **Đáp:** “Tôi bổ sung checklist, kiểm tra tài khoản và cập nhật lại trạng thái.”
+
+#### Tổng hợp các case
+
+| Case | Pain nổi bật trong kịch bản | Tín hiệu phản bác / giới hạn | Phương án đơn giản nên so sánh |
+|---|---|---|---|
+| Học viên | Phải copy và tải lại trên hai kênh | Đăng ít; phần dựng tốn thời gian hơn phần upload | Manual + caption mẫu |
+| Lab coach | Chỉnh mô tả, kiểm link, xác nhận đúng chuyên môn | Cần kiểm duyệt trước khi đăng; đã có template | Template + checklist + duyệt |
+| Nhân viên văn phòng | Bỏ sót nền tảng, khó xác nhận trạng thái và lịch | Phải xem loại tài khoản, quyền API và tần suất thật | Công cụ sẵn có hoặc Rule + log trạng thái |
+
+**Giả thuyết rút ra:** Không nên định nghĩa vấn đề là “cần AI đăng video”. Nhóm nên tập trung kiểm chứng liệu **người đăng nhiều nền tảng với tần suất cao có thực sự mất thời gian vì thao tác và theo dõi trạng thái hay không**. Kịch bản học viên cho tín hiệu phản bác về giá trị; kịch bản lab coach nhấn mạnh việc duyệt nội dung; kịch bản nhân viên văn phòng gợi ý cơ hội Rule-based Automation.
+
+**Tư liệu tham khảo nội bộ:** [Bản mô phỏng chi tiết ba vai trò](../assets/cp4-interview-simulations.md).
+
+
+### Tư liệu từ người dùng thật trên diễn đàn công khai (secondary research, KHÔNG PHẢI phỏng vấn)
+
+Các trường hợp dưới đây xuất phát từ **bài viết/bình luận công khai của người dùng tự mô tả trải nghiệm**, có đường dẫn gốc. Đây không phải người được nhóm liên hệ hoặc phỏng vấn, không có cách xác minh độc lập danh tính hay số phút họ tự báo cáo. **Số cuộc phỏng vấn trực tiếp vẫn là 0**, không dùng bốn trường hợp này để thay yêu cầu phỏng vấn 2–3 người hoặc khảo sát 5–10 người.
+
+| Nguồn và vai trò người tự thuật | Sự việc đã kể và cách xử lý | Tín hiệu xác nhận / phản bác | Hàm ý cần kiểm chứng |
+|---|---|---|---|
+| **Trường hợp công khai A — Influencer đăng TikTok** ([r/SocialMediaMarketing, 21/12/2025](https://www.reddit.com/r/SocialMediaMarketing/comments/1pshp39/how_to_cross_post/)) | Người đăng nói muốn tự động đưa video từ TikTok sang YouTube/Instagram vì mệt mỏi khi upload thủ công. Trong phần trả lời, họ cho biết **đăng 3 lần/ngày**; khi một người khác mô tả việc chuẩn bị master video và upload theo lô, họ nói từng làm gần giống vậy. | **Xác nhận một dạng pain:** người đăng thường xuyên muốn giảm tải thủ công; **phản bác một phần:** phương án batching có thể giải quyết mà chưa cần tự xây AI. | Hỏi người đăng video thật số lượt/tuần, số kênh và mức độ hiệu quả của cách làm theo lô. |
+| **Trường hợp công khai B — Solo builder tự đăng nội dung cho 5 ứng dụng** ([r/buildinpublic, 11/09/2026](https://www.reddit.com/r/buildinpublic/comments/1wd7cmb/how_do_you_handle_social_media_postings/)) | Người viết nói đang cố đăng **15 short/ngày**, thường chuyển clip từ máy tính sang điện thoại, soạn caption rồi đăng từng nền tảng; **tự ước tính khoảng 2 giờ hoặc hơn mỗi ngày** chỉ cho công việc này. | **Xác nhận có điều kiện:** tải lại và điều chỉnh metadata có thể rất tốn thời gian ở người đăng khối lượng lớn. **Giới hạn:** tần suất và số giờ do chính tác giả tự thuật, chưa được bấm giờ độc lập; khối lượng này không đại diện học viên đăng thỉnh thoảng. | Phân nhóm đối tượng theo tần suất thực tế; không lấy 2 giờ/ngày làm baseline chung cho nhóm. |
+| **Trường hợp công khai C — Người dùng Metricool chia sẻ trải nghiệm** ([r/SmallYTChannel, 11/12/2023](https://www.reddit.com/r/SmallYTChannel/comments/18fx4il)) | Người bình luận cho biết đã dùng **Metricool** để đăng Shorts lên Instagram, Facebook, TikTok và Pinterest; họ không nhận thấy vấn đề giảm chất lượng âm thanh, nhưng thấy **chờ upload/xử lý từng video mất thời gian**, nhất là khi không dùng mẫu nhập hàng loạt CSV. | **Tín hiệu phản bác quan trọng:** Dù đã dùng công cụ đa kênh, bottleneck có thể chuyển sang **thời gian chờ upload và xử lý**, không nhất thiết là nhập lại caption. | Đo riêng thời gian thao tác của người dùng và thời gian nền tảng tải/xử lý video; so sánh công cụ sẵn có trước khi xây Rule. |
+| **Trường hợp công khai D — Người thử tái sử dụng video nhiều nền tảng** ([r/NewTubers, 05/03/2026](https://www.reddit.com/r/NewTubers/comments/1rlnt9a/does_anyone_actually_repurpose_their_videos_for/)) | Người viết nói việc chỉnh hook, tỷ lệ và văn phong cho mỗi nền tảng làm **khối lượng công việc gần gấp đôi**; một người tham gia khác còn cho rằng không đáng tốn công đăng khắp nơi nếu lợi ích mang lại thấp. | **Phản bác việc chỉ tập trung upload:** khó khăn có thể nằm ở biên tập nội dung hoặc **ROI thấp** của việc phân phối thêm kênh; tự động upload không giải quyết phần này. | Hỏi cụ thể thời gian chỉnh nội dung so với thao tác đăng và mức giá trị của mỗi kênh đối với người đăng. |
+
+**Insight từ tư liệu thứ cấp:** Có tín hiệu pain thật ở người đăng nhiều lần/ngày, nhưng **không có một bottleneck thống nhất**: có người mệt vì lặp thao tác, người khác mất thời gian chờ video upload, và người khác tốn công chỉnh nội dung hoặc không thấy lợi ích của việc đăng nhiều nền tảng. Đây là **điểm phản bác giả định ban đầu**, không nên chỉ tìm thông tin xác nhận. Điều chỉnh đề xuất cho CP5: đo tách biệt (a) chuẩn bị/chỉnh metadata, (b) tương tác với giao diện và API, (c) chờ upload/xử lý, (d) kiểm tra kết quả trước khi chọn mức tự động hóa.
+
+**Không được ghi những nội dung này là câu trả lời phỏng vấn do nhóm hỏi.** Để đáp ứng yêu cầu CP4, nhóm vẫn cần phỏng vấn trực tiếp người dùng ngoài nhóm hoặc làm survey thật.
 
 ### 3.3. Research giải pháp đã có
 
+Đã đối chiếu tài liệu hướng dẫn chính thức thay vì giả định rằng phải tự xây AI/Agent. Các nguồn được truy cập ngày **09/11/2026**; tính năng và điều kiện sử dụng cần kiểm tra lại trước pilot.
+
 | Công cụ / case / pattern | Link | Giải bước nào trong quy trình? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| **Buffer — công cụ quản lý/lên lịch đa kênh** | [Supported channels](https://support.buffer.com/articles/supported-channels-LM3P7Y4zsp); [Scheduling posts](https://support.buffer.com/articles/scheduling-posts-4Qdld7giAZ) | Soạn bài tập trung, chọn nhiều kênh, chỉnh nội dung theo kênh và hẹn lịch; tài liệu có liệt kê Instagram Professional, TikTok và YouTube Shorts | Giảm chuyển qua lại giữa các giao diện và thao tác đăng thủ công; không yêu cầu nhóm xây AI | Một số loại tài khoản/tính năng dùng **notification publishing** thay vì tự đăng; bài đã lên lịch phải sửa riêng theo từng kênh; giới hạn theo API/gói sản phẩm | **Thử công cụ có sẵn trước khi tự lập trình**; không hứa tự động hoàn toàn |
+| **Metricool — lập lịch video với tùy chọn đăng thủ công khi cần** | [Supported formats](https://help.metricool.com/scheduling-and-posting-options-by-social-network-cwmb3); [Manual publishing](https://help.metricool.com/how-to-set-up-notifications-for-manual-publishing-ybhgw) | Chuẩn bị, lên lịch và phân phối video/Reels/Shorts; cho biết định dạng hỗ trợ theo từng nền tảng | Có bảng so sánh rõ tính năng theo kênh và hỗ trợ tình huống phải hoàn tất đăng trong app gốc | Một số hiệu ứng, nhạc hoặc tính năng chỉ dùng được trong app; có giới hạn định dạng/loại tài khoản; chưa thử với tài khoản thật | Thiết kế **fallback đăng thủ công riêng từng kênh** thay vì giả định tất cả tác vụ đều gọi API được |
+| **Rule/script dùng API chính thức (không AI)** | [YouTube videos.insert](https://developers.google.com/youtube/data/reference/rest/v3/videos/insert); [TikTok Direct Post](https://developers.tiktok.com/docs/en/content-posting-api-get-started); [Instagram API — Meta](https://www.postman.com/meta/instagram/documentation/6yqw8pt/instagram-api) | Upload/publish video sau khi người dùng chọn nội dung, cấp quyền và xác nhận; lưu trạng thái cho từng nền tảng | Quy trình rõ ràng, có thể kiểm thử và theo dõi trạng thái; không cần AI quyết định nội dung | YouTube cần OAuth; TikTok cần quyền `video.publish` và app chưa qua audit bị giới hạn hiển thị riêng tư; Instagram API yêu cầu loại tài khoản/quyền hợp lệ. Chưa xác minh việc tích hợp thật và nguy cơ token hết hạn/đăng trùng | Nếu tự xây, **giới hạn phạm vi theo API/quyền đã thử thành công**, kiểm tra trạng thái trước retry và luôn có người duyệt |
+
+**Kết luận từ research (không phải kết quả thử nghiệm):**
+
+- **Không cần AI để thực hiện thao tác đăng tải có quy tắc rõ.** Những công cụ hiện có đã hỗ trợ nhiều phần của quy trình; tự xây hệ thống chỉ có giá trị nếu sau thử nghiệm vẫn còn pain đáng kể mà công cụ sẵn có không giải quyết.
+- **Rule có điều kiện triển khai**, không đồng nghĩa API có thể đăng mọi video, nhạc, hiệu ứng hoặc loại tài khoản. Bảo đảm người dùng kiểm tra nội dung và xử lý các kênh lỗi.
+- **Ưu tiên thử theo thứ tự:** (1) template + checklist/đăng thủ công, (2) Buffer hoặc Metricool với tài khoản và video phù hợp, (3) Rule/script tùy biến **chỉ nếu** hai mức trước chưa đủ và đã xác minh quyền API.
+- Kết quả này phù hợp với **No-Go đối với AI** và **Not Yet đối với việc xây Rule tùy biến** cho đến khi có đo lường người dùng và thử API, như phần CP6.
 
 ---
 
